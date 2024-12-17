@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - No Lives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <h1 class="logo" id="logo">EYA <span>TRABELSI</span></h1>
+        <nav class="navbar" id="navbar">
+          <a href="index.html" id="home">Home</a>
+          <a href="education.html" id="education">Education</a>
+          <a href="experience.html" id="experience">Experience</a>
+          <a href="skills.html" id="skills">Skills</a>
+          <a href="quiz.html" class="active" id="quiz">Quiz</a>
+          <a href="contact.html" id="contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="quiz-section" id="quiz-section">
+        <h2 id="quiz-title">Quiz</h2>
+        <div class="quiz-container" id="quiz-container">
+            <div class="quiz-header" id="quiz-header">
+                <div class="question-number" id="question-number">
+                    Question <span class="current-question" id="current-question">1</span>/<span class="total-questions" id="total-questions">5</span>
+                </div>
+                <div class="timer" id="timer">
+                  Time left: <span class="time-left" id="time-left">30</span> s
+              </div>
+            </div>
+
+            <div class="progress-bar-container" id="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <div class="question" id="question">
+                <p class="question-text" id="question-text">Quelle est votre question ici ?</p>
+            </div>
+
+            <div class="answers" id="answers">
+                <button class="answer" name="answer" value="1" id="answer-1">Réponse 1</button>
+                <button class="answer" name="answer" value="2" id="answer-2">Réponse 2</button>
+                <button class="answer" name="answer" value="3" id="answer-3">Réponse 3</button>
+                <button class="answer" name="answer" value="4" id="answer-4">Réponse 4</button>
+                <button class="answer" name="answer" value="5" id="answer-5">Réponse 5</button>
+            </div>
+
+            <div class="feedback" id="feedback">
+                <p class="feedback-text" id="feedback-text"></p>
+            </div>
+
+            <div class="result" id="result">
+                <p class="result-message" id="result-message"></p>
+                <button class="restart" id="restart">Recommencer</button>
+            </div>
+        </div>
+    </section>
+
+    <script defer src="quiz.js"></script>
+</body>
+</html>
